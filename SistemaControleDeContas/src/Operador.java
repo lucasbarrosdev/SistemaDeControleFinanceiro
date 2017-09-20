@@ -10,20 +10,12 @@ public class Operador {
 		for (Lancamento l : lancamentos){
 			listagem += "\n"
 					+ "ID: " + l.id + "\n "
-					+ "Título: " + l.titulo + "\n "
-					+ "Status: " + (l.pago ? "Pago" : "Não pago") + "\n "
+					+ "TÃ­tulo: " + l.titulo + "\n "
+					+ "Status: " + (l.pago ? "Pago" : "NÃ£o pago") + "\n "
 					+ "Tipo: " + l.tipo + "\n "
 					+ "Valor: R$ " + l.valor + "\n "
-					+ "Mês: " + l.getNumMes() + "\n";
+					+ "MÃªs: " + l.getNumMes() + "\n";
 		}
-		
-		return listagem;
-	}
-	
-	public String listarLancamentosPagos(Mes mes){
-		
-		String listagem = "";
-		ArrayList<Lancamento> lancamentos = mes.getLancamentosMensais();
 		
 		return listagem;
 	}
